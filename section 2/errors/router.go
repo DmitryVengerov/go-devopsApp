@@ -17,7 +17,7 @@ func NewRouter() *ResponseRouter {
 		Handlers: make(map[int]HandlerFunc),
 		DefaultHandler: func(r *http.Response) {
 			log.Fatalln("Unhandled Response:", r.StatusCode)
-		},
+		}
 	}
 }
 
